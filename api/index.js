@@ -1,6 +1,6 @@
 import express from "express";
-import userRoutes from './routes/user.js';
-import cors from "cros";
+import userRoutes from './routes/users.js';
+import cors from "cors";
 
 const app = express();
 
@@ -9,4 +9,4 @@ app.use(cors());
 
 app.use('/', userRoutes)
 
-app.listen(3305);
+app.listen(8800);
